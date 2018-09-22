@@ -93,11 +93,3 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 end
 
-group :production do
-  gem 'pg', '0.20.0'
-end
-
-group :development, :test do
-  gem 'sqlite3', '1.3.13'
-  gem 'byebug',  '9.0.6', platform: :mri
-end
